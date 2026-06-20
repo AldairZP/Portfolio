@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>THE MONOLITH | PORTFOLIO</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&amp;family=Space+Mono:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed": "#5f5e5c",
+                        "primary-container": "#3c3b39",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed-variant": "#e5e2de",
+                        "on-primary-fixed": "#ffffff",
+                        "primary-fixed": "#5f5e5c",
+                        "surface-container-low": "#f4f3f0",
+                        "surface-container": "#efeeeb",
+                        "on-surface": "#1a1c1a",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed-dim": "#474744",
+                        "secondary-fixed": "#c8c6c2",
+                        "inverse-primary": "#c8c6c3",
+                        "tertiary-container": "#767471",
+                        "surface": "#FAF9F6",
+                        "surface-container-highest": "#e3e2df",
+                        "tertiary": "#3c3b39",
+                        "on-primary-container": "#ffffff",
+                        "on-secondary-container": "#1b1c19",
+                        "on-secondary-fixed": "#1b1c19",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed-variant": "#3b3c38",
+                        "surface-dim": "#dbdad7",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-surface": "#2f312f",
+                        "secondary-fixed-dim": "#acaba7",
+                        "on-tertiary-fixed-variant": "#e5e2de",
+                        "surface-variant": "#e3e2df",
+                        "secondary-container": "#d6d4cf",
+                        "on-primary": "#e5e2de",
+                        "primary": "#1C1C1A",
+                        "inverse-on-surface": "#f2f1ee",
+                        "secondary": "#5f5e5b",
+                        "on-tertiary": "#e5e2de",
+                        "outline-variant": "#c6c6c6",
+                        "surface-container-high": "#e9e8e5",
+                        "primary-fixed-dim": "#474744",
+                        "on-tertiary-fixed": "#ffffff",
+                        "outline": "#777777",
+                        "surface-tint": "#5f5e5c",
+                        "on-surface-variant": "#474747",
+                        "on-error-container": "#410002",
+                        "on-tertiary-container": "#ffffff",
+                        "background": "#FAF9F6",
+                        "on-background": "#1C1C1A",
+                        "surface-bright": "#FAF9F6",
+                        "error": "#ba1a1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Space Mono"],
+                        "label": ["Space Mono"]
+                    },
+                    "fontSize": {
+                        "xs": "0.875rem", // 14px
+                        "sm": "1rem",     // 16px
+                        "base": "1.125rem" // 18px
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .grayscale-hover img {
+            filter: grayscale(100%);
+            transition: filter 0.3s ease;
+        }
+        .grayscale-hover:hover img {
+            filter: grayscale(0%);
+        }
+    </style>
+</head>
+<body class="bg-[#FAF9F6] text-[#1C1C1A] selection:bg-[#1C1C1A] selection:text-white">
+<!-- Top Navigation Shell -->
+<header class="sticky top-0 z-50 pt-6 px-6">
+<nav class="bg-[#FAF9F6] border-2 border-[#1C1C1A] flex justify-between items-center w-full max-w-[720px] mx-auto px-6 py-8">
+<div class="text-2xl font-bold uppercase tracking-[-0.02em] text-[#1C1C1A]">Jonathan Zapata</div>
+<div class="hidden md:flex gap-8">
+<a class="text-[#1C1C1A] border-b-2 border-[#1C1C1A] pb-1 font-['Space_Mono'] text-sm uppercase tracking-wider" href="#">INDEX</a>
+<a class="text-[#1C1C1A]/50 font-['Space_Mono'] uppercase text-sm tracking-wider hover:text-[#1C1C1A] transition-all" href="#">ARCHIVE</a>
+<a class="text-[#1C1C1A]/50 font-['Space_Mono'] uppercase text-sm tracking-wider hover:text-[#1C1C1A] transition-all" href="#">ABOUT</a>
+<a class="text-[#1C1C1A]/50 font-['Space_Mono'] uppercase text-sm tracking-wider hover:text-[#1C1C1A] transition-all" href="#">CONTACT</a>
+</div>
+<button class="md:hidden">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+</header>
+<!-- Main Content Canvas -->
+<main class="max-w-[720px] mx-auto px-6">
+<!-- Hero / About Me Section -->
+<section class="mt-[128px] flex flex-col gap-8">
+<div class="max-w-2xl">
+<h1 class="font-['Space_Grotesk'] font-bold text-5xl md:text-7xl uppercase tracking-[-0.04em] leading-none mb-12">
+                    Visual <br/> Engineering <br/> For Precision.
+                </h1>
+<p class="font-['Space_Mono'] text-sm leading-[1.6] text-[#1C1C1A] max-w-lg mb-12">
+                    I am a designer and creative engineer focused on structural integrity and editorial clarity. My work explores the intersection of neo-brutalist architecture and high-fidelity digital systems.
+                </p>
+<button class="border-2 border-[#1C1C1A] bg-transparent font-['Space_Mono'] font-bold uppercase px-8 py-4 text-sm tracking-widest hover:bg-[#1C1C1A] hover:text-[#FAF9F6] transition-all duration-100 active:scale-95">
+                    VIEW ARCHIVE
+                </button>
+</div>
+<div class="w-full aspect-[16/9] border-2 border-[#1C1C1A] overflow-hidden bg-surface-container grayscale-hover">
+<img alt="Brutalist Architecture" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAe60kLkmzKYznVFsvVn1ln6IFvYa-hRAw2Hh_tGkyEaFR3J5kzIwDHgtFL2cykoPXwVaUkUGjJOhyGk-bK8Rk1Ucd9GHS6BawnE_XCKokGnVDGOdioBpdfYWZ6eNYFN9hIhroQalS4k-ow30-EfpzPSJQyoOBiCsobqfeZO_7OIsQPP-uu9Lhakg-b-x_F81LmtYm9SFwfkEkhGLKFI524EdQG4gOnNvXDqdWiXWihwlla2CVs21xC8rvWsUwxtAUAsuZWDy77OGs"/>
+</div>
+</section>
+<!-- 1. Selected Case Studies (Projects) Section -->
+<section class="mt-[128px]" id="index">
+<div class="border-b-2 border-[#1C1C1A] pb-4 mb-8">
+<h2 class="font-['Space_Grotesk'] font-bold text-sm uppercase tracking-[0.2em]">Selected Case Studies</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Project 01 -->
+<article class="flex flex-col border-2 border-[#1C1C1A] bg-[#FAF9F6] overflow-hidden group">
+<div class="w-full aspect-[4/3] border-b-2 border-[#1C1C1A] overflow-hidden bg-surface-container grayscale-hover">
+<img alt="Project 01" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPLb-QKq-Z0DXWBR86K5_VPVZZlSBreaGGJGGDdcWevwTugdsKU1I27GIDKHfbvry1X0VRxczIE4NiNzCFv-ron6wi6R8mVmVUpXFA8qpnwckQ5ovpoRhtsqCaO9zC0ApqbcZHhPg-eAceqOcv2Rr4NUBtj7ZyHSMrKWPD8_9MGYJ38TG3VRu1TKPn5Qc6F6RtOt64uSUAcBcJToTO1cXb3TH_ibWvTHqieX9Fi_MQeRXeKEEz09SrtJ9P5m_2yTi5ivYgKHyWtBs"/>
+</div>
+<div class="p-6 flex flex-col flex-grow items-start">
+<div class="mb-6">
+<span class="font-['Space_Mono'] text-xs uppercase tracking-widest mb-2 opacity-60 block">01 / ARCH</span>
+<h3 class="font-['Space_Grotesk'] font-bold text-xl uppercase tracking-tight mb-3">Metropolitan Grid</h3>
+<p class="font-['Space_Mono'] text-xs leading-[1.6] opacity-80">
+                                A systematic overhaul of urban information architecture.
+                            </p>
+</div>
+<div class="mt-auto w-full">
+<a class="inline-block border-2 border-[#1C1C1A] font-['Space_Mono'] font-bold uppercase px-4 py-3 text-xs tracking-widest hover:bg-[#1C1C1A] hover:text-[#FAF9F6] transition-all duration-100" href="#">
+                                EXPLORE
+                            </a>
+</div>
+</div>
+</article>
+<!-- Project 02 -->
+<article class="flex flex-col border-2 border-[#1C1C1A] bg-[#FAF9F6] overflow-hidden group">
+<div class="w-full aspect-[4/3] border-b-2 border-[#1C1C1A] overflow-hidden bg-surface-container grayscale-hover">
+<img alt="Project 02" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWwIXKv_jQB3SJ5rm2htnC54yt3Q3r5OkgMjrkCDbRTIzCu5s1TwWQXhb3RWZ9ltrPWU2IGnM7tvS92LIGwjpH7bZ1IsO82NFzhQjd2XABEPIG1It5x4Gk-ZRYWDz__96ix16q_GPlVAqgM7YO6YLt3VaeIecxKPn7HcfIwVDL7rVQMw95u65OLwB4RSSmBnUt6bPrLbq7ZVOq5ZQB6NhkHnTh7cv0VpgkcjEbmjusUkvPIoU00SuFx2-cLWON4lx3qeNnbzQ8B1E"/>
+</div>
+<div class="p-6 flex flex-col flex-grow items-start">
+<div class="mb-6">
+<span class="font-['Space_Mono'] text-xs uppercase tracking-widest mb-2 opacity-60 block">02 / UI</span>
+<h3 class="font-['Space_Grotesk'] font-bold text-xl uppercase tracking-tight mb-3">Monolith UI</h3>
+<p class="font-['Space_Mono'] text-xs leading-[1.6] opacity-80">
+                                Experimental design system built on 2px boundaries.
+                            </p>
+</div>
+<div class="mt-auto w-full">
+<a class="inline-block border-2 border-[#1C1C1A] font-['Space_Mono'] font-bold uppercase px-4 py-3 text-xs tracking-widest hover:bg-[#1C1C1A] hover:text-[#FAF9F6] transition-all duration-100" href="#">
+                                EXPLORE
+                            </a>
+</div>
+</div>
+</article>
+<!-- Project 03 -->
+<article class="flex flex-col border-2 border-[#1C1C1A] bg-[#FAF9F6] overflow-hidden group">
+<div class="w-full aspect-[4/3] border-b-2 border-[#1C1C1A] overflow-hidden bg-surface-container grayscale-hover">
+<img alt="Project 03" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIWpLtrJ_1ABz6Ogb8krjXMXN6kxuw_X1xSJK38icBblTibs6dPQOHSq08Fw9vyA7iIHyb5YKho9ynScew158xhMhS2_sytSA2mJDFbvc6tDmr38vzfM5dU6BDn1kJSt41H5jyGyX_-xtn-B5tFPleVdRngM_3JMdIuZp7_kiY0lyLOz24bB6GLHSqInYlZv3YRas3MO7s1wW8KPGnMM6HPb8Fi8kJmB_kRAMHlkgiQkh2UvdNCLGp0KVQC6kfMkM6cXdFi7WuPZA"/>
+</div>
+<div class="p-6 flex flex-col flex-grow items-start">
+<div class="mb-6">
+<span class="font-['Space_Mono'] text-xs uppercase tracking-widest mb-2 opacity-60 block">03 / GEN</span>
+<h3 class="font-['Space_Grotesk'] font-bold text-xl uppercase tracking-tight mb-3">Synthetic Nature</h3>
+<p class="font-['Space_Mono'] text-xs leading-[1.6] opacity-80">
+                                Exploration of procedural generation and organic forms.
+                            </p>
+</div>
+<div class="mt-auto w-full">
+<a class="inline-block border-2 border-[#1C1C1A] font-['Space_Mono'] font-bold uppercase px-4 py-3 text-xs tracking-widest hover:bg-[#1C1C1A] hover:text-[#FAF9F6] transition-all duration-100" href="#">
+                                EXPLORE
+                            </a>
+</div>
+</div>
+</article>
+<!-- Project 04 -->
+<article class="flex flex-col border-2 border-[#1C1C1A] bg-[#FAF9F6] overflow-hidden group">
+<div class="w-full aspect-[4/3] border-b-2 border-[#1C1C1A] overflow-hidden bg-surface-container grayscale-hover">
+<img alt="Project 04" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAe60kLkmzKYznVFsvVn1ln6IFvYa-hRAw2Hh_tGkyEaFR3J5kzIwDHgtFL2cykoPXwVaUkUGjJOhyGk-bK8Rk1Ucd9GHS6BawnE_XCKokGnVDGOdioBpdfYWZ6eNYFN9hIhroQalS4k-ow30-EfpzPSJQyoOBiCsobqfeZO_7OIsQPP-uu9Lhakg-b-x_F81LmtYm9SFwfkEkhGLKFI524EdQG4gOnNvXDqdWiXWihwlla2CVs21xC8rvWsUwxtAUAsuZWDy77OGs"/>
+</div>
+<div class="p-6 flex flex-col flex-grow items-start">
+<div class="mb-6">
+<span class="font-['Space_Mono'] text-xs uppercase tracking-widest mb-2 opacity-60 block">04 / STRUC</span>
+<h3 class="font-['Space_Grotesk'] font-bold text-xl uppercase tracking-tight mb-3">Linear Void</h3>
+<p class="font-['Space_Mono'] text-xs leading-[1.6] opacity-80">
+                                Investigating the spatial depth within structural minimalist architecture.
+                            </p>
+</div>
+<div class="mt-auto w-full">
+<a class="inline-block border-2 border-[#1C1C1A] font-['Space_Mono'] font-bold uppercase px-4 py-3 text-xs tracking-widest hover:bg-[#1C1C1A] hover:text-[#FAF9F6] transition-all duration-100" href="#">
+                                EXPLORE
+                            </a>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- 2. Experience Section -->
+<section class="mt-[128px]">
+<div class="border-b-2 border-[#1C1C1A] pb-4 mb-8">
+<h2 class="font-['Space_Grotesk'] font-bold text-sm uppercase tracking-[0.2em]">Experience</h2>
+</div>
+<div class="space-y-4">
+<div class="border-2 border-[#1C1C1A] p-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+<div>
+<h3 class="font-['Space_Grotesk'] font-bold text-xl uppercase tracking-tight">Lead Design Technologist</h3>
+<p class="font-['Space_Mono'] text-xs opacity-70 uppercase tracking-wider">The Monolith Studio / London</p>
+</div>
+<div class="font-['Space_Mono'] text-xs font-bold uppercase border-2 border-[#1C1C1A] px-4 py-2">
+                        2022 — PRES.
+                    </div>
+</div>
+<div class="border-2 border-[#1C1C1A] p-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+<div>
+<h3 class="font-['Space_Grotesk'] font-bold text-xl uppercase tracking-tight">Senior Creative Engineer</h3>
+<p class="font-['Space_Mono'] text-xs opacity-70 uppercase tracking-wider">Grid Systems Agency / NY</p>
+</div>
+<div class="font-['Space_Mono'] text-xs font-bold uppercase border-2 border-[#1C1C1A] px-4 py-2">
+                        2019 — 2022
+                    </div>
+</div>
+<div class="border-2 border-[#1C1C1A] p-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+<div>
+<h3 class="font-['Space_Grotesk'] font-bold text-xl uppercase tracking-tight">Interaction Designer</h3>
+<p class="font-['Space_Mono'] text-xs opacity-70 uppercase tracking-wider">Brutal Digital / Berlin</p>
+</div>
+<div class="font-['Space_Mono'] text-xs font-bold uppercase border-2 border-[#1C1C1A] px-4 py-2">
+                        2017 — 2019
+                    </div>
+</div>
+</div>
+</section>
+<!-- 3. Technologies Section -->
+<section class="mt-[128px]">
+<div class="border-b-2 border-[#1C1C1A] pb-4 mb-8">
+<h2 class="font-['Space_Grotesk'] font-bold text-sm uppercase tracking-[0.2em]">Technologies</h2>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="border-2 border-[#1C1C1A] p-4 text-center">
+<span class="font-['Space_Mono'] text-xs font-bold uppercase tracking-widest">TypeScript</span>
+</div>
+<div class="border-2 border-[#1C1C1A] p-4 text-center">
+<span class="font-['Space_Mono'] text-xs font-bold uppercase tracking-widest">React</span>
+</div>
+<div class="border-2 border-[#1C1C1A] p-4 text-center">
+<span class="font-['Space_Mono'] text-xs font-bold uppercase tracking-widest">Tailwind</span>
+</div>
+<div class="border-2 border-[#1C1C1A] p-4 text-center">
+<span class="font-['Space_Mono'] text-xs font-bold uppercase tracking-widest">Figma</span>
+</div>
+<div class="border-2 border-[#1C1C1A] p-4 text-center">
+<span class="font-['Space_Mono'] text-xs font-bold uppercase tracking-widest">Cinema 4D</span>
+</div>
+<div class="border-2 border-[#1C1C1A] p-4 text-center">
+<span class="font-['Space_Mono'] text-xs font-bold uppercase tracking-widest">Node.js</span>
+</div>
+<div class="border-2 border-[#1C1C1A] p-4 text-center">
+<span class="font-['Space_Mono'] text-xs font-bold uppercase tracking-widest">WebGPU</span>
+</div>
+<div class="border-2 border-[#1C1C1A] p-4 text-center">
+<span class="font-['Space_Mono'] text-xs font-bold uppercase tracking-widest">GLSL</span>
+</div>
+</div>
+</section>
+<!-- 4. Education Section -->
+<section class="mt-[128px]">
+<div class="border-b-2 border-[#1C1C1A] pb-4 mb-8">
+<h2 class="font-['Space_Grotesk'] font-bold text-sm uppercase tracking-[0.2em]">Education</h2>
+</div>
+<div class="border-2 border-[#1C1C1A] p-8">
+<div class="mb-8">
+<h3 class="font-['Space_Grotesk'] font-bold text-xl uppercase tracking-tight">MSc Computational Design</h3>
+<p class="font-['Space_Mono'] text-xs opacity-70 uppercase tracking-wider">Royal College of Art / 2017</p>
+</div>
+<div>
+<h3 class="font-['Space_Grotesk'] font-bold text-xl uppercase tracking-tight">BFA Graphic Engineering</h3>
+<p class="font-['Space_Mono'] text-xs opacity-70 uppercase tracking-wider">Bauhaus-Universität Weimar / 2015</p>
+</div>
+</div>
+</section>
+<!-- Moved CTA: WANT TO SEE MORE RECENT WORK? -->
+<section class="mt-[128px]">
+<div class="border-2 border-[#1C1C1A] p-12 flex flex-col items-center text-center bg-white hover:bg-[#1C1C1A] hover:text-[#FAF9F6] transition-colors duration-300 cursor-pointer group">
+<h3 class="font-['Space_Grotesk'] font-bold text-2xl uppercase tracking-tighter mb-4">WANT TO SEE MORE RECENT WORK?</h3>
+<div class="flex items-center gap-4">
+<span class="font-['Space_Mono'] text-xs uppercase font-bold tracking-[0.3em]">VISIT DIGITAL ARCHIVE</span>
+<span class="material-symbols-outlined transform group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</div>
+</div>
+</section>
+<!-- 5. Inquiry (CTA/Newsletter) Section -->
+<section class="mt-8 border-2 border-[#1C1C1A] p-12 bg-surface-container">
+<h2 class="font-['Space_Grotesk'] font-bold text-4xl uppercase tracking-tight mb-8">INQUIRY</h2>
+<p class="font-['Space_Mono'] text-xs mb-12 opacity-80">Join the collective for monthly insights into technical design and engineering updates.</p>
+<form class="flex flex-col gap-6">
+<div class="flex flex-col gap-2">
+<label class="font-['Space_Mono'] text-xs uppercase font-bold tracking-widest">EMAIL ADDRESS</label>
+<input class="bg-transparent border-2 border-[#1C1C1A] rounded-none px-4 py-4 font-['Space_Mono'] text-xs focus:ring-0 focus:outline-none focus:bg-[#FAF9F6] transition-all" placeholder="USER@THEMONOLITH.CO" type="email"/>
+</div>
+<button class="w-full border-2 border-[#1C1C1A] bg-[#1C1C1A] text-[#FAF9F6] font-['Space_Mono'] font-bold uppercase py-5 tracking-[0.2em] hover:bg-transparent hover:text-[#1C1C1A] transition-all duration-100 text-xs" type="submit">
+                    SUBSCRIBE
+                </button>
+</form>
+</section>
+</main>
+<!-- 6. Footer Shell -->
+<footer class="mt-[128px]">
+<div class="bg-[#FAF9F6] border-t-2 border-[#1C1C1A] flex flex-col md:flex-row justify-between items-center w-full max-w-[720px] mx-auto px-6 py-16">
+<div class="font-['Space_Grotesk'] font-bold text-lg mb-8 md:mb-0">THE MONOLITH</div>
+<div class="flex flex-col md:flex-row gap-8 items-center">
+<div class="font-['Space_Mono'] text-xs uppercase tracking-wider text-[#1C1C1A]/70 flex gap-6">
+<a class="hover:italic transition-all" href="#">ARE.NA</a>
+<a class="hover:italic transition-all" href="#">INSTAGRAM</a>
+<a class="hover:italic transition-all" href="#">TWITTER</a>
+</div>
+</div>
+</div>
+<div class="w-full max-w-[720px] mx-auto px-6 pb-16 text-center md:text-left">
+<p class="font-['Space_Mono'] text-xs uppercase tracking-widest text-[#1C1C1A]/40">
+                © 2024 THE MONOLITH EDITORIAL. ENGINEERED FOR PRECISION.
+            </p>
+</div>
+</footer>
+</body></html>

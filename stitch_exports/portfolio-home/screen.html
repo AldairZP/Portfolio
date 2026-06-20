@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ARCHIVAL_FOLIO | Personal Portfolio</title>
+<!-- Google Fonts: IBM Plex Mono & Space Mono -->
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed": "#e6e2d9",
+                    "on-surface": "#1C1C1A",
+                    "tertiary-fixed-dim": "#e8e5e1",
+                    "on-primary-fixed-variant": "#5c5b59",
+                    "on-primary-fixed": "#403f3d",
+                    "tertiary-dim": "#595856",
+                    "on-secondary-fixed": "#413f39",
+                    "surface-container-highest": "#eae9d9",
+                    "secondary-dim": "#5a5851",
+                    "tertiary": "#656461",
+                    "primary-dim": "#535250",
+                    "on-tertiary": "#ffffff",
+                    "secondary": "#66645d",
+                    "inverse-on-surface": "#9f9d97",
+                    "primary": "#1C1C1A",
+                    "secondary-fixed-dim": "#d8d4cb",
+                    "surface-variant": "#eae9d9",
+                    "error": "#a54731",
+                    "background": "#F4F1EA",
+                    "on-tertiary-container": "#5c5c59",
+                    "on-error-container": "#742410",
+                    "outline": "#1C1C1A",
+                    "surface-container-high": "#f0eee1",
+                    "outline-variant": "#bbbaac",
+                    "on-tertiary-fixed": "#4a4a47",
+                    "surface-container-low": "#fcf9f0",
+                    "primary-fixed": "#e5e2de",
+                    "surface-container": "#E5E1D8",
+                    "error-container": "#fe8b70",
+                    "on-secondary": "#ffffff",
+                    "primary-container": "#e5e2de",
+                    "tertiary-fixed": "#f6f3ef",
+                    "on-primary-container": "#52524f",
+                    "on-secondary-container": "#53524b",
+                    "surface": "#F4F1EA",
+                    "tertiary-container": "#f6f3ef",
+                    "inverse-primary": "#ffffff",
+                    "secondary-container": "#e6e2d9",
+                    "on-primary": "#faf7f3",
+                    "inverse-surface": "#0e0e0b",
+                    "on-tertiary-fixed-variant": "#676663",
+                    "error-dim": "#5c1202",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-dim": "#e4e3d2",
+                    "on-secondary-fixed-variant": "#5d5b55",
+                    "on-error": "#ffffff",
+                    "on-background": "#1C1C1A",
+                    "surface-bright": "#F4F1EA",
+                    "on-surface-variant": "#656559",
+                    "surface-tint": "#5f5e5c",
+                    "primary-fixed-dim": "#d7d4d0"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "0px"
+            },
+            "fontFamily": {
+                    "headline": ["IBM Plex Mono", "monospace"],
+                    "body": ["Space Mono", "monospace"],
+                    "label": ["IBM Plex Mono", "monospace"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #F4F1EA;
+            color: #1C1C1A;
+            font-family: 'Space Mono', monospace;
+        }
+        .grayscale-editorial {
+            filter: grayscale(100%) contrast(1.1);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-[#F4F1EA] text-[#1C1C1A]">
+<!-- Main Centralized Fixed-Width Container -->
+<div class="max-w-[800px] mx-auto min-h-screen border-x border-[#1C1C1A] flex flex-col">
+<!-- TopNavBar Component -->
+<nav class="flex justify-between items-center w-full px-6 py-4 border-b border-[#1C1C1A] bg-[#F4F1EA] dark:bg-[#1C1C1A]">
+<div class="text-xl font-bold font-['IBM_Plex_Mono'] uppercase tracking-tighter text-[#1C1C1A] dark:text-[#F4F1EA]">
+                ARCHIVAL_FOLIO
+            </div>
+<div class="hidden md:flex gap-6 items-center">
+<a class="font-['IBM_Plex_Mono'] font-bold uppercase tracking-tighter text-sm text-[#1C1C1A] dark:text-[#F4F1EA] underline decoration-2 underline-offset-4" href="#">ARCHIVE</a>
+<a class="font-['IBM_Plex_Mono'] font-bold uppercase tracking-tighter text-sm text-[#1C1C1A]/60 dark:text-[#F4F1EA]/60 hover:bg-[#1C1C1A] hover:text-[#F4F1EA] transition-colors duration-0 px-1" href="#">INDEX</a>
+<a class="font-['IBM_Plex_Mono'] font-bold uppercase tracking-tighter text-sm text-[#1C1C1A]/60 dark:text-[#F4F1EA]/60 hover:bg-[#1C1C1A] hover:text-[#F4F1EA] transition-colors duration-0 px-1" href="#">DISPATCH</a>
+<a class="font-['IBM_Plex_Mono'] font-bold uppercase tracking-tighter text-sm text-[#1C1C1A]/60 dark:text-[#F4F1EA]/60 hover:bg-[#1C1C1A] hover:text-[#F4F1EA] transition-colors duration-0 px-1" href="#">STUDIO</a>
+</div>
+<button class="font-['IBM_Plex_Mono'] font-bold uppercase tracking-tighter text-sm px-4 py-1 border border-[#1C1C1A] hover:bg-[#1C1C1A] hover:text-[#F4F1EA] active:translate-y-[2px] transition-all">
+                CONTACT
+            </button>
+</nav>
+<!-- Hero Section: Sobre Mí -->
+<section class="grid grid-cols-1 md:grid-cols-2 border-b border-[#1C1C1A]">
+<!-- Left Column: Content -->
+<div class="p-8 flex flex-col justify-center border-b md:border-b-0 md:border-r border-[#1C1C1A]">
+<span class="font-['IBM_Plex_Mono'] font-bold uppercase text-[10px] tracking-widest mb-4">PERSONA // 001</span>
+<h1 class="font-['IBM_Plex_Mono'] font-bold uppercase text-5xl leading-[0.9] tracking-tighter mb-6">
+                    SOBRE MÍ
+                </h1>
+<p class="font-['Space_Mono'] text-sm leading-relaxed text-[#1C1C1A]">
+                    Independent creative director and archivist based in the digital periphery. Specialized in structural minimalism and mechanical aesthetics. I treat every interface as a document of permanence, prioritizing the physical weight of typography over ephemeral trends.
+                </p>
+<div class="mt-8 flex gap-4">
+<button class="bg-[#1C1C1A] text-[#F4F1EA] px-6 py-3 font-['IBM_Plex_Mono'] font-bold uppercase text-xs active:translate-y-[2px] hover:bg-[#F4F1EA] hover:text-[#1C1C1A] border border-[#1C1C1A] transition-colors duration-0">
+                        VIEW DOSSIER
+                    </button>
+</div>
+</div>
+<!-- Right Column: Image -->
+<div class="p-8 flex items-center justify-center bg-[#E5E1D8]">
+<figure class="w-full aspect-square border border-[#1C1C1A] overflow-hidden bg-white">
+<img alt="Portrait" class="w-full h-full object-cover grayscale-editorial" data-alt="High contrast grayscale studio portrait of a man with sharp features and neutral expression, harsh directional lighting, grainy film texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA17fT52Z-bzMXvHXzWltspyhNdsUdI6uoUachaMOf2kInmsLH4QANwaq7OT3spuOIVVXA7QnNT5L2S64oSZr7WRlRqbzXuIwQZJ1xFjKM1dDk07Cd-McrM4Ox8Lqglg9FPdAImHAdblGTs5x5lctB_06plpJ4vCfh9CRznObxCNnn2IdVEY81MmayBFwIn02-Fg42LFx406jY4B0PNgUyrrvCucNvG453Rax0zRzFJKEU3OLu8u-pACpkMU-7KAv1uwuhns19dTm00"/>
+</figure>
+</div>
+</section>
+<!-- Bento Grid Portfolio Section -->
+<section class="p-0 border-b border-[#1C1C1A]">
+<div class="grid grid-cols-1 md:grid-cols-12">
+<!-- Large Feature -->
+<div class="md:col-span-8 p-8 border-b md:border-b-0 md:border-r border-[#1C1C1A] hover:bg-[#E5E1D8] transition-colors duration-0 group cursor-crosshair">
+<span class="font-['IBM_Plex_Mono'] font-bold uppercase text-[10px] tracking-widest mb-2 block">PROJECT_01</span>
+<h2 class="font-['IBM_Plex_Mono'] font-bold uppercase text-2xl tracking-tighter mb-4">KINETIC MONOTYPE</h2>
+<div class="border border-[#1C1C1A] mb-4 overflow-hidden h-64">
+<img class="w-full h-full object-cover grayscale-editorial group-hover:scale-105 transition-transform duration-500" data-alt="Abstract geometric shapes in black and white, structural lines and brutalist architecture influence, high contrast minimal composition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCU8nqmZ2CtHt2Te2qmXmB2Q92YaoZ_9dSprzTSRR1h4G9up8QAmscdUbRbP_M20p9-OayLrYg44Je4eSqhY0ZgSY82KRMyMI9HykMa562EXEI9cN8M8B_ePzD5jSpbno4BlzjBxg4F4snuWmAU1HH1CaZrKGcSHxoQa1Hug1YWhpSGk8gYXJvW2VR83gKIgMYpf0VcSFbyQ-jxBYWYPCwSzOHlfFNI27q-NeW55RFoV8bccNaksjevxUZw8ilb8HyuP7LB5H18ZVoi"/>
+</div>
+<p class="text-xs uppercase font-bold font-['IBM_Plex_Mono']">System Architecture / 2023</p>
+</div>
+<!-- Small Stack -->
+<div class="md:col-span-4 flex flex-col">
+<div class="p-6 border-b border-[#1C1C1A] flex-1 hover:bg-[#1C1C1A] hover:text-[#F4F1EA] transition-colors duration-0 group">
+<span class="font-['IBM_Plex_Mono'] font-bold uppercase text-[10px] tracking-widest mb-1 block">ENTRY_02</span>
+<h3 class="font-['IBM_Plex_Mono'] font-bold uppercase text-lg tracking-tighter">THE GRID</h3>
+<p class="text-[10px] font-['Space_Mono'] mt-2 opacity-70">Exploring rigid layout constraints in modern web environments.</p>
+</div>
+<div class="p-6 border-b border-[#1C1C1A] flex-1 hover:bg-[#1C1C1A] hover:text-[#F4F1EA] transition-colors duration-0 group">
+<span class="font-['IBM_Plex_Mono'] font-bold uppercase text-[10px] tracking-widest mb-1 block">ENTRY_03</span>
+<h3 class="font-['IBM_Plex_Mono'] font-bold uppercase text-lg tracking-tighter">ANALOG_DATA</h3>
+<p class="text-[10px] font-['Space_Mono'] mt-2 opacity-70">Visualizing non-digital datasets through monochromatic lens.</p>
+</div>
+<div class="p-6 flex-1 hover:bg-[#1C1C1A] hover:text-[#F4F1EA] transition-colors duration-0 group">
+<span class="font-['IBM_Plex_Mono'] font-bold uppercase text-[10px] tracking-widest mb-1 block">ENTRY_04</span>
+<h3 class="font-['IBM_Plex_Mono'] font-bold uppercase text-lg tracking-tighter">TYPE_PRESS</h3>
+<p class="text-[10px] font-['Space_Mono'] mt-2 opacity-70">Physical manifestation of IBM Plex Mono in print media.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Marginalia / Info Section -->
+<section class="p-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="flex flex-col gap-2">
+<h4 class="font-['IBM_Plex_Mono'] font-bold uppercase text-xs border-b border-[#1C1C1A] pb-1">TECHNICAL_STACK</h4>
+<ul class="text-[10px] font-['Space_Mono'] uppercase flex flex-col gap-1 mt-2">
+<li>01. Structural HTML</li>
+<li>02. Brutalist CSS</li>
+<li>03. Archival Layouts</li>
+<li>04. Monochrome Theory</li>
+</ul>
+</div>
+<div class="flex flex-col gap-2">
+<h4 class="font-['IBM_Plex_Mono'] font-bold uppercase text-xs border-b border-[#1C1C1A] pb-1">CURRENT_LOCATION</h4>
+<p class="text-[10px] font-['Space_Mono'] uppercase mt-2">
+                    COORDINATES: 52.5200° N, 13.4050° E<br/>
+                    TIMEZONE: UTC+01:00
+                </p>
+</div>
+<div class="flex flex-col gap-2">
+<h4 class="font-['IBM_Plex_Mono'] font-bold uppercase text-xs border-b border-[#1C1C1A] pb-1">NEWSLETTER_FEED</h4>
+<div class="flex mt-2">
+<input class="bg-transparent border-b-2 border-[#1C1C1A] w-full text-[10px] font-['Space_Mono'] uppercase py-1 focus:outline-none placeholder:text-[#1C1C1A]/30" placeholder="EMAIL_ADDRESS" type="email"/>
+<button class="material-symbols-outlined text-sm ml-2">arrow_forward</button>
+</div>
+</div>
+</section>
+<!-- Spacer to push footer down -->
+<div class="flex-grow"></div>
+<!-- Footer Component -->
+<footer class="flex flex-col md:flex-row justify-between items-center w-full px-6 py-8 border-t border-[#1C1C1A] bg-[#F4F1EA] dark:bg-[#1C1C1A]">
+<div class="font-['Space_Mono'] text-[10px] uppercase tracking-widest text-[#1C1C1A] dark:text-[#F4F1EA] mb-4 md:mb-0 text-center md:text-left">
+                © 2024 THE ANALOG ARCHIVE. ALL RIGHTS RESERVED.
+            </div>
+<div class="flex gap-6">
+<a class="font-['Space_Mono'] text-[10px] uppercase tracking-widest text-[#1C1C1A]/50 dark:text-[#F4F1EA]/50 hover:underline" href="#">PRIVACY</a>
+<a class="font-['Space_Mono'] text-[10px] uppercase tracking-widest text-[#1C1C1A]/50 dark:text-[#F4F1EA]/50 hover:underline" href="#">TERMS</a>
+<a class="font-['Space_Mono'] text-[10px] uppercase tracking-widest text-[#1C1C1A]/50 dark:text-[#F4F1EA]/50 hover:underline" href="#">RSS</a>
+</div>
+</footer>
+</div>
+</body></html>
