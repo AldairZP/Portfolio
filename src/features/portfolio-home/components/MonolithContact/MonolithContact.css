@@ -1,0 +1,60 @@
+/* ===== MonolithContact ===== */
+
+.monolith-newsletter {
+    border: var(--monolith-border);
+    background: var(--monolith-card);
+    padding: clamp(1.75rem, 6vw, 3rem);
+}
+
+.monolith-newsletter h2 {
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(1.7rem, 6vw, 2.55rem);
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+}
+
+.monolith-newsletter p {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.monolith-newsletter form {
+    display: grid;
+    gap: 1rem;
+}
+
+.monolith-newsletter label {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    font-weight: 700;
+}
+
+.monolith-newsletter input {
+    border: var(--monolith-border);
+    background: transparent;
+    color: var(--monolith-ink);
+    font: inherit;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 1rem;
+}
+
+.monolith-newsletter input:focus-visible {
+    outline: 2px solid var(--monolith-ink);
+    outline-offset: 2px;
+}
+
+.monolith-button-solid {
+    width: 100%;
+    justify-content: center;
+    background: var(--monolith-ink);
+    color: var(--monolith-bg);
+}
+
+.monolith-button-solid:hover,
+.monolith-button-solid:focus-visible {
+    background: transparent;
+    color: var(--monolith-ink);
+}

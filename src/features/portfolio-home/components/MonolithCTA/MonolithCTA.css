@@ -1,0 +1,28 @@
+/* ===== MonolithCTA ===== */
+
+.monolith-cta {
+    display: grid;
+    gap: 1rem;
+    border: var(--monolith-border);
+    background: var(--monolith-paper);
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    padding: clamp(2.4rem, 6vw, 3rem);
+    transition:
+        background-color 200ms ease,
+        color 200ms ease;
+}
+
+.monolith-cta span {
+    font-size: 0.74rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    font-weight: 700;
+}
+
+.monolith-cta:hover,
+.monolith-cta:focus-visible {
+    background: var(--monolith-ink);
+    color: var(--monolith-bg);
+}

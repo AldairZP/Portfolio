@@ -1,0 +1,9 @@
+/* ===== MonolithEducation ===== */
+
+.monolith-education-card {
+    border: var(--monolith-border);
+    padding: clamp(1.5rem, 4vw, 2.25rem);
+    background: var(--monolith-bg);
+    display: grid;
+    gap: 2.2rem;
+}

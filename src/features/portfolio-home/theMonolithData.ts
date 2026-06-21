@@ -126,4 +126,13 @@ export const education: EducationItem[] = [
   },
 ];
 
-export const socialLinks = ["Are.na", "Instagram", "Twitter"];
+export type SocialLink = {
+  label: string;
+  href: string;
+};
+
+export const socialLinks: SocialLink[] = [
+  { label: "LinkedIn", href: "https://linkedin.com/in/jonathanzapata" },
+  { label: "GitHub", href: "https://github.com/jonathanzapata" },
+  { label: "Email", href: "mailto:jonathan@themonolith.co" },
+];

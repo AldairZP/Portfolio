@@ -1,0 +1,122 @@
+/* ===== MonolithNav ===== */
+
+.monolith-header {
+    position: sticky;
+    inset-block-start: 0;
+    z-index: 20;
+    padding-block-start: 1.5rem;
+}
+
+.monolith-nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: var(--monolith-nav-shell);
+    margin-inline: auto;
+    border: var(--monolith-border);
+    background: rgba(250, 249, 246, 0.95);
+    backdrop-filter: blur(4px);
+    padding: 1.5rem;
+}
+
+.monolith-nav-section {
+    display: flex;
+    align-items: center;
+}
+
+.monolith-nav-left {
+    flex: 1;
+    justify-content: flex-start;
+}
+
+.monolith-nav-center {
+    flex: 2;
+    justify-content: center;
+}
+
+.monolith-nav-right {
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.monolith-logo {
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(1.2rem, 2.2vw, 1.55rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+}
+
+.monolith-nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.monolith-nav-link {
+    display: inline-flex;
+    text-decoration: none;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    color: var(--monolith-muted);
+    padding-block-end: 0.35rem;
+    border-block-end: 2px solid transparent;
+    transition: color 140ms ease;
+}
+
+.monolith-nav-link:hover,
+.monolith-nav-link:focus-visible {
+    color: var(--monolith-ink);
+}
+
+.monolith-nav-link.is-active {
+    color: var(--monolith-ink);
+    border-color: var(--monolith-ink);
+}
+
+.monolith-social-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.monolith-social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: var(--monolith-border);
+    border-radius: 50%;
+    color: var(--monolith-muted);
+    transition:
+        color 140ms ease,
+        background-color 140ms ease;
+}
+
+.monolith-social-link:hover,
+.monolith-social-link:focus-visible {
+    color: var(--monolith-bg);
+    background-color: var(--monolith-ink);
+}
+
+.monolith-menu-button {
+    display: none;
+    border: var(--monolith-border);
+    background: transparent;
+    color: inherit;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    padding: 0.7rem 0.9rem;
+}

@@ -1,0 +1,21 @@
+/* ===== MonolithTechnologies ===== */
+
+.monolith-tech-grid {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.75rem;
+}
+
+.monolith-tech-grid li {
+    border: var(--monolith-border);
+    text-align: center;
+    padding: 1rem 0.5rem;
+    font-size: 0.66rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    background: var(--monolith-bg);
+}

@@ -1,0 +1,47 @@
+/* ===== ProjectCard ===== */
+
+.monolith-project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.monolith-project-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    border: var(--monolith-border);
+    background: var(--monolith-bg);
+    overflow: hidden;
+}
+
+.monolith-project-image {
+    border-bottom: var(--monolith-border);
+    background: var(--monolith-card);
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+}
+
+.monolith-project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.monolith-project-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.monolith-project-code {
+    display: block;
+    font-size: 0.66rem;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    opacity: 0.64;
+    margin-bottom: 0.65rem;
+}
